@@ -29,5 +29,5 @@ jobs:
         name: hello-artifact
 
     - name: Test File Exists
-      run: cat ./artifacts/hello.txt
+      run: cat ./hello.txt
 
