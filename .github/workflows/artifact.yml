@@ -19,7 +19,7 @@ jobs:
         name: hello-artifact
         path: hello.txt
     
-  test_job_2:
+  download:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -29,6 +29,5 @@ jobs:
         name: hello-artifact
         path: artifacts
 
-    - name: Test File Exists
-      run: cat ./artifacts/hello.txt  
-
+    - name: Display content of the text file
+      run: cat ./artifacts/hello.txt
